@@ -11,7 +11,7 @@
   </ul>
   <ul class="ml-auto flex">
     <li>
-      <a [routerLink]="social.href" *ngFor="let social of header.social" >
+      <a [href]="social.href" *ngFor="let social of header.social" >
         <img class="w-10 h-10 mr-3 mt-2" [src]="social.icon" [alt]="social.href">
       </a>
     </li>

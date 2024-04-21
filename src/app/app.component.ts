@@ -16,18 +16,10 @@ export class AppComponent {
   title = 'plants';
   header: header = {
     hrefs: [
-      {
-        href: 'https://plants.app',
-        display: 'block',
-      },
-      {
-        href: 'https://plants.app',
-        display: 'block',
-      }
     ],
     social: [
       {
-        href: 'https://plants.app',
+        href: 'https://github.com/k3nder/plants-angular',
         icon: '/assets/github-mark-white.svg',
       }
     ],
