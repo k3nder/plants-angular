@@ -1,0 +1,25 @@
+<header
+  class="bg-primary-900 border border-b-primary-800 border-t-primary-900 border-l-primary-900 border-r-primary-900 border-spacing-1 flex"
+>
+  <a href="/"><img class="w-10 h-10 m-2" [src]="header.logo" alt="logo"></a>
+  <ul class="mt-5 ml-10 flex">
+    <li>
+      <a [routerLink]="link.href" *ngFor="let link of header.hrefs" class="text-white hover:text-yellow-300 transition duration-250 p-2 rounded-md">
+        {{link.display}}
+      </a>
+    </li>
+  </ul>
+  <ul class="ml-auto flex">
+    <li>
+      <a [routerLink]="social.href" *ngFor="let social of header.social" >
+        <img class="w-10 h-10 mr-3 mt-2" [src]="social.icon" [alt]="social.href">
+      </a>
+    </li>
+  </ul>
+</header>
+<router-outlet />
+<br>
+<div class="bg-secondary-600 mt-36 py-4">
+  <app-footer />
+</div>
+
